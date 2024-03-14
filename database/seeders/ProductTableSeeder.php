@@ -16,24 +16,6 @@ class ProductTableSeeder extends Seeder
      */
     public function run(Faker $faker): void
     {
-        // $NewProduct = new Product();
-        // $NewProduct->name = $faker->company();
-        // $NewProduct->description = $faker->realText(200, 1);
-        // $NewProduct->image =  'https://picsum.photos/id/' . rand(1, 100) . '/400';
-        // $NewProduct->ean_code = $faker->randomNumber(13, true);
-        // $NewProduct->price = $faker->randomFloat(2, 4.99, 999);
-        // $NewProduct->featured = false;
-        // $NewProduct->save();
-
-        // USES FACTORY TO GENERATE FAKE PRODUCT ISTANCES
-        // Product::factory(100)->create([
-        //     'name' => $faker->company(),
-        //     'description' => $faker->realText(200, 1),
-        //     'image' => 'https://picsum.photos/id/' . rand(1, 100) . '/400',
-        //     'ean_code' => $faker->randomNumber(13, true),
-        //     'price' => $faker->randomFloat(2, 4.99, 999),
-        //     'featured' => false,
-        // ]);
 
         $categories = Category::all();
 
@@ -66,12 +48,3 @@ class ProductTableSeeder extends Seeder
         }
     }
 }
-
-// $table->id();
-// $table->string('name');
-// $table->longText( 'description' )->nullable();
-// $table->longText('image')->nullable();
-// $table->integer('ean_code');
-// $table->float( 'price', 8, 2 );
-// $table->boolean('featured');
-// $table->timestamps();
