@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>Livewire</title>
 
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -15,15 +15,15 @@
 
 </head>
 
-<body>
+<body class="bg-body-tertiary">
 
-    <header class="bg-secondary text-center shadow">
+    <header>
 
-        <h1 class="m-0">APP.Blade</h1>
+        <div class="bg-secondary text-center py-2 shadow">
+            <h1>Livewire Components and .csv Database Seeding</h1>
+        </div>
 
     </header>
-
-
 
     <main>
         @yield('content')
