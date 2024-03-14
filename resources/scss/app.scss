@@ -1,1 +1,11 @@
 @import '~bootstrap/scss/bootstrap';
+
+/*#region VARIABLES*/
+$light-text: white;
+$light-text-shadow: 1px 1px 3px #000000;
+/*#endregion VARIABLES*/
+
+.price {
+    color: $light-text;
+    text-shadow: $light-text-shadow;
+}

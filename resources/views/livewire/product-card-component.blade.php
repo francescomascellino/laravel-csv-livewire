@@ -1,8 +1,12 @@
 <div class="col">
 
-    <div class="card bg-dark text-light position-relative shadow h-100">
-        <span class="position-absolute text-success fw-bold m-2">{{ $product['price'] }} €</span>
-        <img src="{{ $product['image'] }}" class="card-img-top" alt="...">
+    <div class="card bg-dark text-light shadow h-100">
+
+        <div class="position-relative">
+            <img src="{{ $product['image'] }}" class="card-img-top" alt="...">
+            <span class="position-absolute bottom-0 end-0 fw-bold m-2 price">{{ $product['price'] }} €</span>
+        </div>
+
         <div class="card-body">
             <div class="d-flex align-items-center mb-1" style="height: 3rem">
                 <h5 class="card-title">
